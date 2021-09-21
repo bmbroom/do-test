@@ -1,0 +1,12 @@
+spec:
+  services:
+  - name: sample-rstudio-ngchm
+    image:
+      registry_type: "DOCKER_HUB"
+      registry: "ngchm"
+      repository: "rstudio-ngchm"
+      tag: "4.0.5"
+    envs:
+    - key: PASSWORD
+      value: "password-to-use-for-rstudio"
+      type: SECRET
