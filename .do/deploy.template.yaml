@@ -1,6 +1,7 @@
 spec:
+  name: "sample-rstudio-ngchm"
   services:
-  - name: "sample-rstudio-ngchm"
+  - name: "rstudio-ngchm"
     image:
       registry_type: "DOCKER_HUB"
       registry: "ngchm"
