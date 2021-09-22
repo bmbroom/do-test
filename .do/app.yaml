@@ -1,4 +1,4 @@
-name: sample-golang
+name: do-test
 services:
 - name: web
   github:
