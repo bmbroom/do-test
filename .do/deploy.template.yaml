@@ -1,7 +1,7 @@
 spec:
- name: sample-golang
+ name: do-test
  services:
  - name: web
    git:
-     branch: main
-     repo_clone_url: https://github.com/bmbroom/sample-golang.git
+     branch: do-example-config
+     repo_clone_url: https://github.com/bmbroom/do-test.git
