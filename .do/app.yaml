@@ -1,6 +1,6 @@
-name: sample-golang
+name: do-test
 services:
 - name: web
   github:
-    repo: bmbroom/sample-golang
-    branch: main
+    repo: bmbroom/do-test
+    branch: do-example-config
