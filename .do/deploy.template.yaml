@@ -2,11 +2,11 @@ spec:
   name: "sample-rstudio-ngchm"
   services:
   - name: "rstudio-ngchm"
-    image:
-      registry_type: "DOCKER_HUB"
-      registry: "ngchm"
-      repository: "rstudio-ngchm"
-      tag: "4.0.5"
+    github:
+      branch: main
+      deploy_on_push: false
+      repo: bmbroom/do-test
+    dockerfile_path: Dockerfile
     envs:
     - key: PASSWORD
       value: "new-password-to-use-for-rstudio"
@@ -15,7 +15,6 @@ spec:
     http_port: 8787
     instance_count: 1
     instance_size_slug: basic-xs
-    name: ngchm-rstudio-ngchm
     routes:
     - path: /
     source_dir: /
