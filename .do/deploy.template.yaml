@@ -10,5 +10,6 @@ spec:
     envs:
     - key: PASSWORD
       value: "password-to-use-for-rstudio"
+      scope: "RUN_TIME"
       type: SECRET
     port: 8787
