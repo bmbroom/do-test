@@ -12,7 +12,6 @@ spec:
       value: "new-password-to-use-for-rstudio"
       scope: "RUN_TIME"
       type: SECRET
-    http_port: 8787
     instance_count: 1
     instance_size_slug: basic-xs
     name: ngchm-rstudio-ngchm
