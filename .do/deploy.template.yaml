@@ -1,5 +1,5 @@
 spec:
- name: do-test
+ name: sample-golang
  services:
  - name: web
    git:
