@@ -17,3 +17,28 @@ Once the app has deployed, a "Live App" button will appear on the page. Clicking
 In the lower-right panel, select the "Files" tab (it's selected by default) and the "Upload" button to upload files, and the "More" menu entry "Export..." to download files from the server back to your computer.  You will need to use the latter to view ngchm files you create.
 
 [![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/bmbroom/do-test/tree/main)
+
+After the RStudio container has been running for a while, the app page should show you some summary statistics of the container's resource utilization.  The Insights tab shows recent CPU and memory usage in more detail.  You can use these as a guide for estimating the size of future deployments.
+
+## Terminate your deployment
+
+When you're finished testing, make sure you have exported **all** the files you need back to your local environment.  Once the deployment is terminated, all of the container's storage is deleted and it is impossible to retrieve any additional content.
+
+To terminate the deployment and stop charges from accruing, choose "Destroy App" from the "Actions" dropdown menu at the top-right of the app page. Enter the app name into the input box to indicate you really mean it, and click the red "Destroy" button.  Destruction should be confirmed in a few moments.  Failing to destroy the app means you will be charged for the time it's running but not being used.
+
+## Pros and Cons of this test environment
+
+Pros:
+  - Easy deployment on a cloud server.
+  - Choose the about of RAM, CPUs needed easily.
+  - Competitive pricing.
+  - Secure SSL connection to the server with no effort from the user and at no extra charge.
+
+Cons:
+  - You need to create a DigitalOcean account just for a short test (but it is free for initial testing).
+  - Storage is ephemeral.  All user files disappear when the deployment is terminated.
+  - You cannot get password back if needed. (Destroy and restart app, but all user files will be lost.)
+  - Hard to remember app URL (There is a way to link it to your domain, but it's out of scope for this README and not worth it for an ephemeral app.)
+  - Currently unknown what happpens to your files if RStudio crashes. Deletion is a likely possibility. Make sure to export copies of important files after any changes.
+
+Future tutorials will describe deployments that overcome some of these issues (but are a bit more complex).
